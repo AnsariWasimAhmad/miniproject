@@ -1,0 +1,84 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="col-sm-10">
+<h3 class="text-white my-5">Contact Page</h3>
+
+<div class="container mt-5">
+    <h1 class="text-warning mb-5 border-bottom">Contact</h1>
+    <div class="row text-white mb-5">
+    <p class="mx-auto mb-5">
+        Do you have question? please do not hesitate to 
+        contact. I will come back to you within a matter of hours
+        to help you.
+    </p>
+    <div class="col-sm-9 mb-5">
+        <form action="">
+            <div class="form-row">
+            <div class="form-group col-md-6">
+            <label for="inputName">Your Name</label>
+            <input type="text" class="form-control"
+            id="inputName" />
+            </div>
+            <div class="form-group col-md-6">
+            <label for="inputEmail">Your Email *</label>
+            <input type="text" class="form-control"
+            id="inputEmail" required />
+            </div>
+            </div>
+    
+            <div class="form-group">
+            <label for="inputSubject">Your Subject</label>
+            <input type="text" class="form-control"
+            id="inputSubject"/>
+    
+    
+            </div>
+    
+            <div class="mb-3">
+            <label for="inputTextarea">Your massage *</label>
+            <textarea class="form-control" id="inputTextarea"
+            required></textarea>
+    
+            </div>
+    
+            <button class="btn btn-primary" type="submit">send</button>
+            </form>
+            </div>
+            <div class="col-sm-3 text-center">
+            <ul class="list-unstyled">
+            <li>
+            <i class="fas fa-map-market-alt fa-2x i-colo"></i>
+            <p>India, Mumbai, maharashtra</p>
+            </li>
+            <li>
+             <i class="fas fa-phone mt-4 fa-2xl i-colo"></i>  
+             <p>+91 8459555107</p> 
+            </li>
+            <li>
+                <i class="fas fa-envelope mt-4 fa-2xl i-colo"></i>
+                <p>wasimahmadansari01@gmail.com</p>
+            </li>
+            </ul>
+    
+            </div>
+    
+    </div>
+    
+    </div>
+    <div class="text-center">
+    <a href="#" target="_blank"><i class="fab fa-twitter i-colo
+        mr-3"></i></a>
+    
+        <a href="#" target="_blank"><i class="fab fa-dribbble
+        i-colo mr-3"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram
+        i-colo"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-facebook-f
+        i-colo"></i></a>
+        
+    </div>
+</div>
+
+{% endblock content %}
